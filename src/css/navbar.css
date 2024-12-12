@@ -1,0 +1,55 @@
+/* Navbar Styling */
+.navbar {
+    background: transparent;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #000;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link i {
+    margin-right: 5px; /* Small space between icon and text */
+}
+
+/* Hover Effect for Icons */
+.nav-link:hover {
+    color: #ff9800; /* Change to orange when hovered */
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
