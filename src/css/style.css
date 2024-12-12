@@ -85,3 +85,50 @@ a:active {
         width: 250px; /* Reduce width slightly on smaller screens */
     }
 }
+
+
+
+/* Login container */
+.login-container {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    /* background: #f9c58e; */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Buttons */
+/* .btn-custom {
+    background-color: #ff9800;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+} */
