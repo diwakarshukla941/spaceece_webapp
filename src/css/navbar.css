@@ -1,19 +1,30 @@
 /* Navbar Styling */
 .navbar {
-    background: transparent;
-    padding: 15px 30px;
+    background: white;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 100px;
+}
+img{
+    width: 400px;
+    height:400px;
 }
 
-.navbar-brand img {
-    width: 120px;
-    height: auto;
+/* Navbar Logo Styling */
+.navbar-logo {
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Set max width */
+    width: auto; /* Prevent stretching */
+    object-fit: contain; /* Prevent distortion */
 }
 
+/* Navbar Links */
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -33,16 +44,24 @@
 }
 
 .nav-link i {
-    margin-right: 5px; /* Small space between icon and text */
+    margin-right: 5px;
 }
 
-/* Hover Effect for Icons */
+/* Hover Effect for Links */
 .nav-link:hover {
-    color: #ff9800; /* Change to orange when hovered */
+    color: #ff9800;
 }
 
-/* Adjust for mobile */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
+    .navbar-logo {
+        max-width: 150px; /* Smaller logo for mobile screens */
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
     .navbar-nav {
         flex-direction: column;
         align-items: center;

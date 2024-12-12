@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Add padding to avoid content overlap with navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header Styling */
+.card-header {
+    background-color: #ffefc7;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    color: #000;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffe8c5;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section Styling */
+.info-section {
+    border: 2px solid #ffc85c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffefc7;
+}
+
+/* Locality Card Styling */
+.locality-card {
+    border: 2px solid #ffc85c;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Form Control Styling */
+.locality-card .form-control {
+    background-color: #dff3f9;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+/* Continue Button Styling */
+.text-center .btn-warning {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Media Queries for responsive spacing */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
